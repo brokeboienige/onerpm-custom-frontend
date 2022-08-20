@@ -12,5 +12,5 @@
 (function() {
     'use strict';
 
-    alert(1)
+    alert(document.location.pathname)
 })();
