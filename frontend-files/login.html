@@ -8,9 +8,68 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+            body {
+                background: linear-gradient(313deg, #ff8326, #ff6142);
+                background-size: 400% 400%;
+
+                -webkit-animation: gradient 3s ease infinite;
+                -moz-animation: gradient 3s ease infinite;
+                animation: gradient 3s ease infinite;
+            }
+
+            @-webkit-keyframes gradient {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @-moz-keyframes gradient {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+            @keyframes gradient {
+                0%{background-position:0% 50%}
+                50%{background-position:100% 50%}
+                100%{background-position:0% 50%}
+            }
+        </style>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <link rel="icon" href="https://onerpm.com/wp-content/themes/onerpm/assets/images/favicon.ico">
     </head>
     <body>
-        
+        <div class="w-100 h-100 d-flex justify-content-center align-items-center text-light">
+            <div class="text-center">
+                <img src="https://raw.githubusercontent.com/brokeboienige/onerpm-custom-frontend/main/frontend-files/logo.png" class="img-responsive w-25">
+                <br>
+                <div class="bg-dark p-3 rounded d-inline-block">
+                    <h3>logue-se</h3>
+                    <hr class="bg-light rounded-pill">
+                    <form class="text-left">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Senha</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="*********">
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6Le-7EIUAAAAAPF4za5GJrozeH2NsJoIWC6NFewO" data-theme="dark"></div>
+                            <input class="form-control d-none" data-recaptcha="true" required data-error="Complete o captcha.">
+                        </div>
+                        <button class="btn btn-outline-light form-control" type="submit">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark w-100 p-3 text-center text-light">
+            <small>ONErpm custom frontend<br>desenvolvido por <a href="https://instagram.com/brokeboienige">@brokeboienige</a></small>
+        </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
